@@ -1,0 +1,50 @@
+.section-beard {
+  background-color: $primary-background-color;
+}
+
+.section-beard .section-name:before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  display: inline-flex;
+  background-color: $primary-text-color;
+  margin-right: 20px;
+}
+
+.section-beard .section-name {
+  display: flex;
+  align-items: center;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 44px;
+  }
+}
+
+.work-examples.list {
+  @media screen and (min-width: 480px) {
+    display: block;
+    margin: -15px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    position: relative;
+  }
+}
+
+.beard-item {
+  @media screen and (min-width: 480px) {
+    width: calc((100% - 1 * 30px) / 1);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 4 * 30px) / 4);
+    margin: 15px;
+  }
+}

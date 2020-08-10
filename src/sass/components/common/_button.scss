@@ -1,0 +1,38 @@
+.button {
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 1px solid $accent-color;
+
+  transition: color $animation-duration $animation-timing-function,
+    background-color $animation-duration $animation-timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    outline: none;
+  }
+  font-style: normal;
+  // BUTTON ON WHITE BACKGROUND
+  &-primary {
+    color: $primary-text-color;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+    }
+  }
+
+  // BUTTON ON DARK BACKGROUND
+  &-secondary {
+    color: #fff;
+  }
+}
